@@ -64,8 +64,8 @@ notebook.
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |   $99.75\%$      |    $78.5\%$       |
-| Upper Bound    |   $99.5\%$       |    $91.75\%$      |
+| Baseline       |   $99.6\%$       |    $78.0\%$       |
+| Upper Bound    |   $99.6\%$       |    $92.0\%$       |
 | SymNet         |   $99.81\%$      |    $88.75\%$      |
 
 To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $0.013$ so the null hypothesis is 
