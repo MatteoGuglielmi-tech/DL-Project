@@ -56,17 +56,17 @@ notebook.
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |  $99.6875\%$     |   $91.75\%$       |
-| Upper Bound    |  $99.625\%$      |   $96.75\%$       |
-| SymNet         |  $98.94\%$       |   $95.0\%$        |
+| Baseline       |  $99.6875$%      |   $91.75$%        |
+| Upper Bound    |  $99.625$%       |   $96.75$%        |
+| SymNet         |  $98.94$%        |   $95.0$%         |
 
 ##### Product $\to$ real-world
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |   $99.6$%        |    $78.0\%$       |
-| Upper Bound    |   $99.6\%$       |    $92.0\%$       |
-| SymNet         |   $99.81\%$      |    $88.75\%$      |
+| Baseline       |   $99.6$%        |    $78.0$%        |
+| Upper Bound    |   $99.6$%        |    $92.0$%        |
+| SymNet         |   $99.81$%       |    $88.75$%       |
 
 To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $0.013$ so the null hypothesis is 
 rejected and a significance difference in performances is confirmed.
