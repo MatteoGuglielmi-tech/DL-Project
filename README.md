@@ -64,7 +64,7 @@ notebook.
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |   $99.6\%$       |    $78.0\%$       |
+| Baseline       |   $99.6$%        |    $78.0\%$       |
 | Upper Bound    |   $99.6\%$       |    $92.0\%$       |
 | SymNet         |   $99.81\%$      |    $88.75\%$      |
 
