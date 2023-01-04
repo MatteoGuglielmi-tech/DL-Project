@@ -52,21 +52,43 @@ In this repository, you can find the adopted solution in the [project.ipynb](htt
 notebook.
 
 ## Results
+
+#### Single run
+
 ##### Real-World $\to$ product
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |  $99.6875$%      |   $91.75$%        |
-| Upper Bound    |  $99.625$%       |   $96.75$%        |
-| SymNet         |  $98.94$%        |   $95.0$%         |
+| Baseline       |  $99.9\%$        |   $91.75\%$       |
+| Upper Bound    |  $99.6\%$        |   $96.75\%$       |
+| SymNet         |  $98.8\%$        |   $95.25\%$       |
 
 ##### Product $\to$ real-world
 
 | Model          | Train Accuracy   | Test Accuracy     |
 | :---           |    :----:        |          ---:     |
-| Baseline       |   $99.6$%        |    $78.0$%        |
-| Upper Bound    |   $99.6$%        |    $92.0$%        |
-| SymNet         |   $99.4$%       |    $89.0$%       |
+| Baseline       |   $99.8\%$       |    $80.75\%$      |
+| Upper Bound    |   $99.8\%$       |    $91.75\%$      |
+| SymNet         |   $99.4\%$       |    $89.75\%$      |
 
-To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $0.013$ so the null hypothesis is 
+#### 5-fold cross-validation
+
+##### Real-World $\to$ product
+
+| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
+| :---           |    :----:               |          ---:         |
+| Baseline       |  $91.95\%$              |   $0.292\%$           |
+| SymNet         |  $95.25\%$              |   $0.224\%$           |
+
+##### Product $\to$ real-world
+
+| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
+| :---           |    :----:               |          ---:         |
+| Baseline       |  $76.65\%$              |   $1.008\%$           |
+| SymNet         |  $89.35\%$              |   $0.255\%$           |
+
+Across the multiple run, our implementation, besides showing an improvement in accuracy, confirm to be more stable as well.
+
+#### Student T-test
+To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $0.0004$ so the null hypothesis is 
 rejected and a significance difference in performances is confirmed.
