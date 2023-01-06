@@ -77,9 +77,9 @@ notebook.
 
 | Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
 | :---           |    :----:               |          ---:         |
-| Baseline       |  $76.39\%$              |   $1.008\%$           |
-| Upper Bound    |  $89.35\%$              |   $0.255\%$           |
-| SymNet         |  $89.35\%$              |   $0.255\%$           |
+| Baseline       |  $77.05\%$              |   $2.48\%$           |
+| Upper Bound    |  $91.60\%$              |   $0.60\%$           |
+| SymNet         |  $87.55\%$              |   $0.58\%$           |
 
 
 ##### Real-World $\to$ product
