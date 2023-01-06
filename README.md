@@ -57,21 +57,30 @@ notebook.
 
 ##### Real-World $\to$ product
 
-| Model          | Train Accuracy   | Test Accuracy     |
-| :---           |    :----:        |          ---:     |
-| Baseline       |  $99.9\%$        |   $91.75\%$       |
-| Upper Bound    |  $99.6\%$        |   $96.75\%$       |
-| SymNet         |  $98.8\%$        |   $95.25\%$       |
+| Model          | Test Accuracy     |
+| :---           |         ---:      |
+| Baseline       |   $91.75\%$       |
+| Upper Bound    |   $96.75\%$       |
+| SymNet         |   $95.25\%$       |
 
 ##### Product $\to$ real-world
 
-| Model          | Train Accuracy   | Test Accuracy     |
-| :---           |    :----:        |          ---:     |
-| Baseline       |   $99.8\%$       |    $80.75\%$      |
-| Upper Bound    |   $99.8\%$       |    $91.75\%$      |
-| SymNet         |   $99.4\%$       |    $89.75\%$      |
+| Model          | Test Accuracy     |
+| :---           |          ---:     |
+| Baseline       |    $80.75\%$      |
+| Upper Bound    |    $91.75\%$      |
+| SymNet         |    $89.75\%$      |
 
 #### 5-fold cross-validation
+
+##### Product $\to$ real-world
+
+| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
+| :---           |    :----:               |          ---:         |
+| Baseline       |  $76.39\%$              |   $1.008\%$           |
+| Upper Bound    |  $89.35\%$              |   $0.255\%$           |
+| SymNet         |  $89.35\%$              |   $0.255\%$           |
+
 
 ##### Real-World $\to$ product
 
@@ -80,12 +89,6 @@ notebook.
 | Baseline       |  $91.95\%$              |   $0.292\%$           |
 | SymNet         |  $95.25\%$              |   $0.224\%$           |
 
-##### Product $\to$ real-world
-
-| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
-| :---           |    :----:               |          ---:         |
-| Baseline       |  $76.65\%$              |   $1.008\%$           |
-| SymNet         |  $89.35\%$              |   $0.255\%$           |
 
 Across the multiple run, our implementation, besides showing an improvement in accuracy, confirm to be more stable as well.
 
