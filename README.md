@@ -84,10 +84,11 @@ notebook.
 
 ##### Real-World $\to$ product
 
-| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
-| :---           |    :----:               |          ---:         |
-| Baseline       |  $91.95\%$              |   $0.292\%$           |
-| SymNet         |  $95.25\%$              |   $0.224\%$           |
+| Model          | Average Test Accuracy   | $\sigma$ Accuracy    |
+| :---           |    :----:               |          ---:        |
+| Baseline       |  $92.95\%$              |   $1.04\%$           |
+| Upper Bound    |  $96.10\%$              |   $0.44\%$           |
+| SymNet         |  $95.30\%$              |   $0.70\%$           |
 
 
 Across the multiple run, our implementation, besides showing an improvement in accuracy, confirm to be more stable as well.
