@@ -1,7 +1,6 @@
 # TOC
 
 <!--toc:start-->
-- [TOC](#toc)
 - [Authors](#authors)
 - [Unsupervised domain adaptation](#unsupervised-domain-adaptation)
   - [Problem statement](#problem-statement)
@@ -10,11 +9,7 @@
   - [Repository structure](#repository-structure)
   - [Results](#results)
       - [Single run](#single-run)
-        - [Real-World $\to$ product](#real-world-to-product)
-        - [Product $\to$ real-world](#product-to-real-world)
       - [5-fold cross-validation](#5-fold-cross-validation)
-        - [Product $\to$ real-world](#product-to-real-world)
-        - [Real-World $\to$ product](#real-world-to-product)
       - [Student T-test](#student-t-test)
 <!--toc:end-->
 
