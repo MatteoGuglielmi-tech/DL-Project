@@ -1,6 +1,7 @@
 # TOC
 
 <!--toc:start-->
+- [TOC](#toc)
 - [Authors](#authors)
 - [Unsupervised domain adaptation](#unsupervised-domain-adaptation)
   - [Problem statement](#problem-statement)
@@ -8,8 +9,13 @@
   - [Dataset](#dataset)
   - [Repository structure](#repository-structure)
   - [Results](#results)
+      - [Single run](#single-run)
         - [Real-World $\to$ product](#real-world-to-product)
         - [Product $\to$ real-world](#product-to-real-world)
+      - [5-fold cross-validation](#5-fold-cross-validation)
+        - [Product $\to$ real-world](#product-to-real-world)
+        - [Real-World $\to$ product](#real-world-to-product)
+      - [Student T-test](#student-t-test)
 <!--toc:end-->
 
 # Authors
@@ -48,7 +54,7 @@ More in detail, for the sake of this assignment $20$ randomly chosen categories 
 As split sizes, a standard $80\%/20\%$ has been used.
 
 ## Repository structure
-In this repository, you can find the adopted solution in the [project.ipynb](https://github.com/Zinni98/Symnet-Unsupervised-domain-adaptation/blob/main/project.ipynb)
+In this repository, you can find the adopted solution in the [232088_229709.ipynb](https://github.com/Zinni98/Symnet-Unsupervised-domain-adaptation/blob/main/project.ipynb)
 notebook.
 
 ## Results
@@ -77,22 +83,33 @@ notebook.
 
 | Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
 | :---           |    :----:               |          ---:         |
-| Baseline       |  $77.05\%$              |   $2.48\%$           |
-| Upper Bound    |  $91.60\%$              |   $0.60\%$           |
-| SymNet         |  $87.55\%$              |   $0.58\%$           |
+| Baseline       |  $77.95\%$              |   $2.015$             |
+| Upper Bound    |  $90.85\%$              |   $1.384$             |
+| SymNet         |  $86.5\%$               |   $0.612$             |
 
+Since the previous table showcase results obtained using a lower number of epochs in the different training steps ($10$), in the following we present also results 
+from a previous run, accidentally overwritten, using $15$ epochs to allow performing a fair comparison between the performances obtained in the two directions.  
+
+| Model          | Average Test Accuracy   | $\sigma$ Accuracy     |
+| :---           |    :----:               |          ---:         |
+| Baseline       |  $77.05\%$              |   $2.48$              |
+| Upper Bound    |  $91.60\%$              |   $0.60$              |
+| SymNet         |  $87.55\%$              |   $0.58$              |
+
+The gain we obtain by using Symnet is $10.5\%$ in accuracy.
 
 ##### Real-World $\to$ product
 
 | Model          | Average Test Accuracy   | $\sigma$ Accuracy    |
 | :---           |    :----:               |          ---:        |
-| Baseline       |  $92.95\%$              |   $1.04\%$           |
-| Upper Bound    |  $96.10\%$              |   $0.44\%$           |
-| SymNet         |  $95.30\%$              |   $0.70\%$           |
+| Baseline       |  $92.95\%$              |   $1.04$             |
+| Upper Bound    |  $96.10\%$              |   $0.44$             |
+| SymNet         |  $95.30\%$              |   $0.70$             |
 
+The gain we obtain by using Symnet is $2.35\%$ in accuracy.
 
 Across the multiple run, our implementation, besides showing an improvement in accuracy, confirm to be more stable as well.
 
 #### Student T-test
-To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $0.0004$ so the null hypothesis is 
+To further confirm the results obtained, a T-test has been performed. The latter shows a p-value of $36\cdot10^{-6}$ so the null hypothesis is 
 rejected and a significance difference in performances is confirmed.
